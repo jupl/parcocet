@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "yarn run clean && parcel build src/+dist/*",
+    "build:prod": "cross-env NODE_ENV=production yarn run build --no-source-maps",
+    "build:watch": "parcel watch src/+dist/*",
+    "clean": "trash .parcel-cache dist",
+    "coverage": "nyc ava",
+    "coverage:report": "nyc --reporter=lcov --reporter=text ava",
+    "lint": "tsc && yarn run lint:file .",
+    "lint:file": "eslint --ext .js,.ts,.tsx",
+    "lint:fix": "yarn run lint:fix:file .",
+    "lint:fix:file": "yarn run lint:file --fix",
+    "server": "parcel serve src/+dist/*",
+    "start": "yarn run build:prod",
+    "test": "ava",
+    "test:update": "yarn run test --update-snapshots",
+    "test:watch": "yarn run test --watch"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@jupl/ts": "^0.2.6",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "@types/recoil": "^0.0.1",
+    "ava": "^3.5.0",
+    "browser-env": "^3.3.0",
+    "cross-env": "^7.0.1",
+    "eslint": "^6.8.0",
+    "esm": "^3.2.25",
+    "nyc": "^15.0.0",
+    "parcel": "^2.0.0-nightly.296",
+    "postcss-modules": "^2.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.8",
+    "source-map-support": "^0.5.16",
+    "trash-cli": "^3.0.0",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recoil": "^0.0.8"
+  }
+}
