@@ -1,6 +1,6 @@
 import React from 'react'
-import {RecoilRoot} from 'recoil'
 import {render} from 'react-dom'
+import {RecoilRoot} from 'recoil'
 import {getRoot} from '~/src/common/util'
 import {MainApp} from './components/app'
 
