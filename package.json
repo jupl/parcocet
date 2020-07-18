@@ -3,7 +3,7 @@
   "scripts": {
     "build": "yarn run clean && parcel build src/+dist/*",
     "build:prod": "cross-env NODE_ENV=production yarn run build --no-source-maps",
-    "build:watch": "parcel watch src/+dist/*",
+    "build:watch": "yarn run clean && parcel watch src/+dist/*",
     "clean": "trash .parcel-cache dist",
     "coverage": "nyc ava",
     "coverage:report": "nyc --reporter=lcov --reporter=text ava",
