@@ -10886,6 +10886,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@babel/core": ^7.0.0
     "@istanbuljs/nyc-config-typescript": ^1.0.1
     "@jupl/ts": ^0.2.6
     "@types/react": ^16.9.43
