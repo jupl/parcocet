@@ -6,6 +6,10 @@ interface GetRootOptions {
 
 /**
  * Get root element to host the application.
+ * @param options Options
+ * @param options.id Optional HTML element ID for root element
+ * @param options.parent Optional parent HTML element of root element
+ * @param options.tag Optional tag type for root element
  * @return HTML element to mount application.
  */
 export const getRoot = ({
