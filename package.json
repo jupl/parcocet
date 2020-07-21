@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "yarn run clean && parcel build src/+dist/*",
+    "build": "trash story/dist && parcel build src/+dist/*",
     "build:prod": "cross-env NODE_ENV=production yarn run build --no-source-maps",
     "build:story": "yarn run clean && build-storybook -c story -o story/dist",
     "build:watch": "yarn run clean && parcel watch src/+dist/*",
-    "clean": "trash .parcel-cache dist story/dist",
+    "clean": "trash .parcel-cache dist",
     "coverage": "yarn run test --coverage",
     "coverage:watch": "yarn run test:coverage --watch",
     "lint": "tsc && yarn run lint:file .",
