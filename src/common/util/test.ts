@@ -1,3 +1,8 @@
+/***
+ * These tests require simulated browser environment.
+ * @jest-environment jsdom
+ */
+
 test('getRoot', async () => {
   const {getRoot} = await import('.')
   expect(document.querySelector('#root')).toBeFalsy()
