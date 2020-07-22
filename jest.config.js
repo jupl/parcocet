@@ -9,7 +9,6 @@ module.exports = {
     prefix: '<rootDir>/',
   }),
   preset: '@jupl/ts',
-  setupFiles: ['dotenv/config'],
   setupFilesAfterEnv: ['<rootDir>/test/setup.ts'],
   transformIgnorePatterns: ['node_modules/(?!(@storybook/addon-storyshots)/)'],
 }
