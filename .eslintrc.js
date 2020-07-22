@@ -2,5 +2,5 @@
 
 module.exports = {
   extends: './node_modules/@jupl/ts/lint',
-  ignorePatterns: ['.parcel-cache/', 'dist/'],
+  ignorePatterns: ['.parcel-cache/', 'coverage/', 'dist/'],
 }
