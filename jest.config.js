@@ -5,7 +5,9 @@ const {compilerOptions} = require('./tsconfig')
 
 module.exports = {
   coveragePathIgnorePatterns: ['/node_modules/', 'story', 'stories'],
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/',
+  }),
   preset: '@jupl/ts',
   setupFiles: ['dotenv/config'],
   setupFilesAfterEnv: ['<rootDir>/test/setup.ts'],
