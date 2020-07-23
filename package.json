@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@jest/globals": "^26.1.0",
+    "@jupl/eslint-config-ts": "npm:@jupl/ts",
     "@jupl/ts": "^0.8.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
