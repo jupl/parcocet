@@ -5,9 +5,10 @@ const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 type Configuration = import('webpack').Configuration
 
 exports.addons = [
-  '@storybook/addon-a11y/register',
-  '@storybook/addon-knobs/register',
-  '@storybook/addon-viewport/register',
+  '@storybook/addon-a11y',
+  '@storybook/addon-actions',
+  '@storybook/addon-knobs',
+  '@storybook/addon-viewport',
 ]
 
 exports.stories = [
@@ -19,22 +20,8 @@ exports.stories = [
 
 exports.webpackFinal = (config: Configuration): Configuration => ({
   ...config,
-  module: {
-    ...config.module,
-    rules: [
-      ...(config.module?.rules ?? []),
-      {
-        loader: require.resolve('babel-loader'),
-        options: {
-          presets: [['react-app', {flow: false, typescript: true}]],
-        },
-        test: /\.tsx?$/,
-      },
-    ],
-  },
   resolve: {
     ...config.resolve,
-    extensions: [...(config.resolve?.extensions ?? []), '.ts', '.tsx'],
     plugins: [...(config.resolve?.plugins ?? []), new TSConfigPathsPlugin()],
   },
 })

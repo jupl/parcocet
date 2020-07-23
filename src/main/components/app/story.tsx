@@ -1,5 +1,7 @@
 import {storiesOf} from '@storybook/react'
 import React from 'react'
-import {MainApp} from '.'
+import {MainApp} from '~/src/main/components/app'
 
-storiesOf('Main|App', module).add('default', () => <MainApp />)
+storiesOf('Main/App', module)
+  .addParameters({component: MainApp})
+  .add('default', () => <MainApp />)
