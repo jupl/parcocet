@@ -19,9 +19,9 @@
     "test:watch": "yarn run test --watch"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
     "@jupl/ts": "^0.8.0",
     "@types/jest": "^26.0.5",
+    "babel-jest": "^26.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
     "jest": "^26.1.0",
