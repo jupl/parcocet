@@ -1,4 +1,4 @@
 {
-  "extends": "@jupl/ts",
+  "extends": "@jupl/ts/lint",
   "ignorePatterns": [".parcel-cache/", "coverage/", "dist/"]
 }
