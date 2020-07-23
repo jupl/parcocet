@@ -13,7 +13,7 @@
     "lint:fix:file": "yarn run lint:file --fix",
     "lint:type": "tsc",
     "server": "parcel serve src/+dist/*",
-    "start": "yarn run build:prod",
+    "start": "yarn run lint && yarn run test && yarn run build:prod",
     "test": "jest",
     "test:update": "yarn run test --update-snapshot",
     "test:watch": "yarn run test --watch"
