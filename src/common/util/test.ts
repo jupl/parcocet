@@ -1,3 +1,5 @@
+import {expect, test} from '@jest/globals'
+
 /***
  * These tests require simulated browser environment.
  * @jest-environment jsdom
