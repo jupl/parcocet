@@ -1,0 +1,10 @@
+{
+  "extends": "@jupl/ts",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["*"]
+    }
+  },
+  "exclude": ["./coverage", "./dist"]
+}

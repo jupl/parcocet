@@ -1,0 +1,4 @@
+{
+  "extends": "./node_modules/@jupl/ts/lint",
+  "ignorePatterns": [".parcel-cache/", ".yarn/", "coverage/", "dist/"]
+}
