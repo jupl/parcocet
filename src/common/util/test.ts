@@ -1,9 +1,8 @@
-import {expect, test} from '@jest/globals'
-
 /***
  * These tests require simulated browser environment.
  * @jest-environment jsdom
  */
+import {expect, test} from '@jest/globals'
 
 test('getRoot', async () => {
   const {getRoot} = await import('.')
