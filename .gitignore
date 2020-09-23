@@ -1,5 +1,7 @@
+# Parcel
 .parcel-cache
 
+# Yarn
 .yarn/*
 !.yarn/releases
 !.yarn/plugins

@@ -8,6 +8,5 @@ module.exports = {
     prefix: '<rootDir>/',
   }),
   preset: '@jupl/ts',
-  setupFiles: ['dotenv/config'],
   setupFilesAfterEnv: ['<rootDir>/test/setup.ts'],
 }
